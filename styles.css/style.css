@@ -1,50 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root{
+:root {
     --cor-primaria: #F3F5FC;
     --cor-secundaria: #FFFFFF;
     --cor-criptografar: #0A3871;
     --cor-descriptografar: #D8DFE8;
-    
-
-    --cor-texto-principal:#0A3871;
-
+    --cor-texto-principal: #0A3871;
     --fonte-principal: "Inter", sans-serif;
-
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: var(--cor-primaria);
     height: 100vh;
     box-sizing: border-box;
 }
 
-.menu{
+.menu {
     margin: 2.5rem 2.5rem;
 }
 
-.content{
+.content {
     display: flex;
     justify-content: space-around;
-    
 }
 
-.content__section{
+.content__section {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-left: 240px;
-
+    margin-left: 15rem;
 }
 
-.textarea__text{  
-    margin-top: 40px;
-    width: 680px;
+.textarea__text {
+    margin-top: 2.5rem;
+    width: 42.5rem;
     border: none;
     font-family: var(--fonte-principal);
     font-weight: 400;
@@ -53,15 +47,14 @@ body{
     background-color: var(--cor-primaria);
 }
 
-.textarea__text::placeholder{
+.textarea__text::placeholder {
     font-family: var(--fonte-principal);
     font-weight: 400;
     font-size: 2rem;
     color: var(--cor-texto-principal);
 }
 
-.textarea__text2{  
-
+.textarea__text2 {
     border: none;
     font-family: var(--fonte-principal);
     font-weight: 400;
@@ -70,112 +63,253 @@ body{
     background-color: var(--cor-secundaria);
 }
 
-
-.textarea__text:focus{
+.textarea__text:focus {
     outline: none;
 }
 
-.content__div{
-    width: 280px;
-    height: 18px;
+.content__div {
+    width: 17.5rem;
+    height: 1.125rem;
     display: flex;
     justify-content: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    gap: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
 }
 
-.content__button{
+.content__button {
     display: flex;
     justify-content: left;
-    gap: 24px;
+    gap: 1.5rem;
     font-family: var(--fonte-principal);
-    border-radius: 32px;
+    border-radius: 2rem;
 }
 
-
-
-.button__primario, .button__secundario {
+.button__primario,
+.button__secundario {
     font-family: var(--fonte-principal);
-    width: 400px;
-    font-size: 16px; 
-    border-radius: 32px; 
-    padding: 24px; 
-    border: none; 
-    cursor: pointer; 
+    width: 25rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    border: none;
+    cursor: pointer;
 }
 
-.button__primario:hover{
+.button__primario:hover {
     background-color: rgb(140, 167, 241);
 }
 
-.button__secundario:hover{
+.button__secundario:hover {
     background-color: rgb(140, 167, 241);
 }
 
-.button__primario{
+.button__primario {
     background-color: var(--cor-criptografar);
     color: var(--cor-secundaria);
-
 }
 
-.button__secundario{
+.button__secundario {
     background-color: var(--cor-descriptografar);
 }
 
-.section__secundaria{
-    margin-top: -80px;
+.section__secundaria {
+    margin-top: -5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
     background-color: #FFFFFF;
-    width: 480px;
-    height: 800px;
-    margin-right: 5px;
-    border-radius: 32px;
+    width: 30rem;
+    height: 50rem;
+    margin-right: 0.3125rem;
+    border-radius: 2rem;
     text-align: center;
 }
 
-.section__div{
-  display: none; 
-  gap: 32px;
+.section__div {
+    display: none;
+    gap: 2rem;
 }
 
-.textarea__text2:focus{
+.textarea__text2:focus {
     outline: none;
 }
 
-
-.button__copy{
-    margin: 100px auto 0 auto;
+.button__copy {
+    margin: 6.25rem auto 0 auto;
     background-color: var(--cor-criptografar);
     font-family: var(--fonte-principal);
-    cursor: pointer; 
+    cursor: pointer;
     display: block;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
     width: 50%;
     text-align: center;
-    border-radius: 32px;
+    border-radius: 2rem;
     font-size: 1rem;
-    padding: 24px;
+    padding: 1.5rem;
     text-decoration: none;
     color: var(--cor-secundaria);
-    
 }
 
-.button__copy:hover{
+.button__copy:hover {
     background-color: rgb(140, 167, 241);
 }
 
-
-.rodape{
-    padding: 50px;
+.rodape {
+    padding: 3.125rem;
     text-align: center;
     justify-content: center;
     background-color: var(--cor-primaria);
     font-family: var(--fonte-principal);
     font-size: 1rem;
     font-weight: 400;
+}
+
+
+@media (max-width: 1200px) {
+    .menu {
+        padding: 5%;
+        margin: 0;
+    }
+
+    .content {
+        padding: 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content__section {
+        width: 90%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textarea__text {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .textarea__text2 {
+        font-size: 1.5rem;
+    }
+
+    .button__primario,
+    .button__secundario {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .section__secundaria {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        box-sizing: border-box;
+        padding: 2rem;
+    }
+
+    .button__copy {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .rodape {
+        padding: 2rem;
+        font-size: 0.875rem;
+    }
+
+    .section__secundaria__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .section__imagem{
+        display: none;
+    }
+
+    .section__secundaria__div h2,
+    .section__secundaria__div p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding: 2%;
+        margin: 0;
+    }
+
+    .content {
+        padding: 1%;
+        flex-direction: column;
+    }
+
+    .content__section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textarea__text {
+        font-size: 1.25rem;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .textarea__text2 {
+        font-size: 1.25rem;
+    }
+
+    .button__primario,
+    .button__secundario {
+        padding: 0.875rem;
+        font-size: 1rem;
+    }
+
+    .section__secundaria {
+        width: 100%;
+    }
+
+    .button__copy {
+        width: 100%;
+        padding: 0.875rem;
+    }
+
+    .rodape {
+        padding: 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    .section__secundaria__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .section__imagem{
+        display: none;
+    }
+
+    .section__secundaria__div h2,
+    .section__secundaria__div p {
+        margin: 0;
+        text-align: center;
+    }
 }

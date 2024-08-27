@@ -1,5 +1,9 @@
 function criptografar(){
     let criptografar = document.getElementById("textarea__primario").value;
+
+    criptografar = criptografar.toLowerCase();
+    criptografar = criptografar.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
     criptografar = criptografar.replace(/e/g, "enter")
                                .replace(/i/g, "imes")
                                .replace(/a/g, "ai")
@@ -12,6 +16,9 @@ function criptografar(){
 
 function descriptografar(){
     let descriptografar = document.getElementById("textarea__primario").value;
+    
+    descriptografar = descriptografar.toLowerCase();
+    descriptografar = descriptografar.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     descriptografar = descriptografar.replace(/enter/g, "e")
                                .replace(/imes/g, "i")
                                .replace(/ai/g, "a")
