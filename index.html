@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles.css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <img src="assets/logo-alura.svg">
+        </nav>
+    </header>
+    <main class="content">
+        <section class="content__section">
+            <textarea id="textarea__primario" rows="14" class="textarea__text" placeholder="Digite Seu Texto"></textarea>
+            <div class="content__div">
+                <img src="assets/icone.svg">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="content__button">
+                <button onclick="criptografar()" class="button__primario">Criptografar</button>
+                <button onclick="descriptografar()" class="button__secundario">Descriptografar</button>
+            </div>
+        </section>
+        <section class="section__secundaria">
+
+            <div class="section__secundaria__div">
+                <img class="section__imagem" src="assets/imagem-mulher.svg">
+                <h2 class="section__secundaria__principal"> Nenhuma mensagem encontrada </h2>
+                <p class="section__secundaria__texto">Digite um texto que você deseja criptografar ou descriptografar.
+                </p>
+            </div>
+
+            <div class="section__div">
+                <textarea id="textarea__secundario" rows="13" class="textarea__text2"></textarea>
+                <button onclick="copiar()" class="button__copy">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Rayane.</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
